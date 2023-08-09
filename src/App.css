@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-family: 'Inter', sans-serif;
+    --text-accent-color: #C6C6C6;
+    --button-primary-background: #242424;
+    --authQuestion-text-color: #5BAAF2;
+    --error-notification-background: #FFD6D6;
+    --error-notification-text-color: #000;
+    --error-notification-border-color: #FF0000;
+}
