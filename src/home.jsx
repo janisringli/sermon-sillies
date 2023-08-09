@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Login from './views/auth/login.jsx';
+import Login from './views/auth/Login/Login.jsx';
 import { useNavigate} from 'react-router-dom';
 import { getUserById } from './services/api';
 
