@@ -10,6 +10,7 @@ const RegistrationForm = () => {
     regEmail: '',
     regPassword: '',
   });
+  const [error, setError] = useState('');
 
   const navigate = useNavigate();
 
@@ -19,6 +20,7 @@ const RegistrationForm = () => {
       ...prevData,
       [name]: value,
     }));
+    checkPassword(registrationData.regPassword);
   };
 
   const handleRegistrationSubmit = async (e) => {
@@ -38,12 +40,20 @@ const RegistrationForm = () => {
     } catch (error) {
       // TODO: Handle registration error
       console.error('Registration error:', error.response.data.error.message);
+        setError(error.response.data.error.message);
     }
   };
 
   return (
     <div>
       <h2>Registration</h2>
+      <div className="error-notification-container">
+        
+          <div className="error-notification-content">
+            <p>{error}</p>
+          </div>
+       
+      </div>
       <form onSubmit={handleRegistrationSubmit}>
         <label htmlFor="regUsername">Username:</label>
         <input
