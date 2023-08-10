@@ -11,4 +11,28 @@
     --error-notification-background: #FFD6D6;
     --error-notification-text-color: #000;
     --error-notification-border-color: #FF0000;
+    --required-field-color: #FF5B5B;
+}
+
+/* --------------- General ---------------*/
+
+.button-primary{
+    background-color: var(--button-primary-background);
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* --------------- Authentication ---------------*/
+.authQuestion-text{
+    font-size: 16px;
+    padding-top: 14px;
+}
+.required-field{
+    color: var(--required-field-color);
+}
+.authQuestion-text a {
+    color: var(--authQuestion-text-color);
+    text-decoration: none;
+    cursor: pointer;
 }
