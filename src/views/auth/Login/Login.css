@@ -68,23 +68,9 @@
     padding-bottom: 10px;
     outline: none;
 }
-.button-primary{
-    background-color: var(--button-primary-background);
-    color: #fff;
-    margin-top: 10px;
-}
 .authenticationform-input{
     display: flex;
     flex-direction: column;
-}
-.authQuestion-text{
-    font-size: 16px;
-    padding-top: 14px;
-}
-.authQuestion-text a {
-    color: var(--authQuestion-text-color);
-    text-decoration: none;
-    cursor: pointer;
 }
 .login-title-image{
     object-fit: cover;
